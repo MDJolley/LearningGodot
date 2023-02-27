@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Entity",
 "language": "GDScript",
-"path": "res://entity.gd"
+"path": "res://scripts/entity.gd"
 } ]
 _global_script_class_icons={
 "Entity": ""
@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Shmup"
-run/main_scene="res://World.tscn"
+run/main_scene="res://scenes/World.tscn"
 config/icon="res://icon.png"
 
 [importer_defaults]

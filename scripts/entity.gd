@@ -1,6 +1,8 @@
 extends KinematicBody2D
 class_name Entity
 
+onready var health_bar = $HealthBar
+
 var maxHealth : int
 var currentHealth : int
 var healthRegen : int
@@ -11,19 +13,25 @@ var currentMana : int
 var manaRegen : int
 
 func _ready():
-	pass # Replace with function body.
+	pass
 
 func applyDamage(amount):
 	var damageTaken = amount - armour
 	if (damageTaken < 1): damageTaken = 1
-	if (currentHealth > damageTaken): currentHealth -= damageTaken
+	if (currentHealth > damageTaken): 
+		currentHealth -= damageTaken
+		health_bar.update_health(currentHealth)
 	else: die()
 
 func regenHP():
 	if (currentHealth < maxHealth):
 		if (currentHealth + healthRegen > maxHealth):
 			currentHealth = maxHealth
-		else: currentHealth += healthRegen
+			health_bar.update_health(currentHealth)
+		else: 
+			currentHealth += healthRegen
+			health_bar.update_health(currentHealth)
+		
 
 func modifyMana(amount):
 	var newMana = currentMana + amount
@@ -38,4 +46,5 @@ func regenMana():
 		else: currentMana += manaRegen
 
 func die():
+	#print("you are dead")
 	pass

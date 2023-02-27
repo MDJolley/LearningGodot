@@ -1,24 +1,30 @@
 extends Entity
 
+onready var player_camera = $Camera
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var level
 var velocity = Vector2(0,0)
 var moveSpeed = 30
-var hp = 100
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	get_child(0).make_current()
-	pass # Replace with function body.
+	initialize_stats()
+	health_bar.update_max_health(maxHealth)
+	health_bar.update_health(currentHealth)
+	player_camera.make_current()
 
+func initialize_stats():
+	maxHealth = 200
+	currentHealth = 1
+	healthRegen = 1
+	armour = 0
+	maxMana = 200
+	currentMana = 200
+	manaRegen = 10
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move(moveSpeed)
 	move_and_slide(velocity)
+	regenHP()
 
 func move(speed):
 	speed *= 5
@@ -38,5 +44,3 @@ func move(speed):
 		velocity.x = -speed
 	else:
 		velocity.x = 0
-	#velocity = velocity.normalized()
-	

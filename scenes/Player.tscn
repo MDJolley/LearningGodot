@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/Player.png" type="Texture" id=1]
-[ext_resource path="res://player_controller.gd" type="Script" id=2]
-[ext_resource path="res://scenes/Wand.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/player_controller.gd" type="Script" id=2]
+[ext_resource path="res://scenes/weapons/Wand.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/ui/Health Bar.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 6.0
@@ -25,3 +26,8 @@ shape = SubResource( 1 )
 
 [node name="Wand" parent="." instance=ExtResource( 3 )]
 position = Vector2( 8, 3 )
+
+[node name="HealthBar" parent="." instance=ExtResource( 4 )]
+margin_left = -8.0
+margin_top = 11.0
+margin_bottom = 11.0
