@@ -1,30 +1,34 @@
 extends Entity
 
 onready var player_camera = $Camera
+onready var regen_delay = $RegenDelay
 
-var level
+var level : int
 var velocity = Vector2(0,0)
-var moveSpeed = 30
+var moveSpeed : int
 
 func _ready():
 	initialize_stats()
 	health_bar.update_max_health(maxHealth)
 	health_bar.update_health(currentHealth)
 	player_camera.make_current()
+	applyDamage(50)	
 
 func initialize_stats():
+	canRegen = true
 	maxHealth = 200
-	currentHealth = 1
+	currentHealth = 51
 	healthRegen = 1
 	armour = 0
 	maxMana = 200
 	currentMana = 200
 	manaRegen = 10
+	moveSpeed =30
 
 func _process(delta):
 	move(moveSpeed)
 	move_and_slide(velocity)
-	regenHP()
+	regenHP(delta)
 
 func move(speed):
 	speed *= 5
@@ -44,3 +48,8 @@ func move(speed):
 		velocity.x = -speed
 	else:
 		velocity.x = 0
+
+
+func _on_RegenDelay_timeout():
+	
+	canRegen = true

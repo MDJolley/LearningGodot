@@ -7,15 +7,22 @@ var maxHealth : int
 var currentHealth : int
 var healthRegen : int
 var armour : int
+var canRegen : bool
 
 var maxMana : int
 var currentMana : int
 var manaRegen : int
+const regenTime = 1
+var regenDelta : float
 
 func _ready():
 	pass
 
 func applyDamage(amount):
+	if(get_node_or_null("RegenDelay")):
+		canRegen = false
+		var timer : Timer = get_node(("RegenDelay"))
+		timer.start(5)
 	var damageTaken = amount - armour
 	if (damageTaken < 1): damageTaken = 1
 	if (currentHealth > damageTaken): 
@@ -23,15 +30,17 @@ func applyDamage(amount):
 		health_bar.update_health(currentHealth)
 	else: die()
 
-func regenHP():
-	if (currentHealth < maxHealth):
-		if (currentHealth + healthRegen > maxHealth):
-			currentHealth = maxHealth
-			health_bar.update_health(currentHealth)
-		else: 
-			currentHealth += healthRegen
-			health_bar.update_health(currentHealth)
-		
+func modifyHP(amount):
+	currentHealth += amount
+	health_bar.update_health(currentHealth)
+
+func regenHP(delta):
+	if(canRegen && currentHealth < maxHealth):
+		regenDelta += delta
+		print(regenDelta)
+		if(regenDelta >= regenTime):
+			modifyHP(60)
+			regenDelta -= regenTime
 
 func modifyMana(amount):
 	var newMana = currentMana + amount

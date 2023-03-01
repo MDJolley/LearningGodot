@@ -31,3 +31,7 @@ position = Vector2( 8, 3 )
 margin_left = -8.0
 margin_top = 11.0
 margin_bottom = 11.0
+
+[node name="RegenDelay" type="Timer" parent="."]
+
+[connection signal="timeout" from="RegenDelay" to="." method="_on_RegenDelay_timeout"]
