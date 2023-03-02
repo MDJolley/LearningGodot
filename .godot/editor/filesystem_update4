@@ -1,11 +1,8 @@
 res://default_env.tres
-res://scenes/World.tscn
-res://scripts/player_controller.gd
-res://scenes/Player.tscn
-res://scripts/entity.gd
-res://scripts/Projectile.gd
-res://scenes/Projectile.tscn
 res://scenes/weapons/Wand.tscn
-res://scripts/projectile.gd
-res://scripts/health_bar.gd
 res://scripts/wand.gd
+res://scenes/World.tscn
+res://scenes/Player.tscn
+res://scenes/Projectile.tscn
+res://scripts/projectile.gd
+res://scripts/player_controller.gd

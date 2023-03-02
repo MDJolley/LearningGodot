@@ -13,7 +13,7 @@ height = 0.0
 script = ExtResource("2")
 
 [node name="Camera3D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(2.409, 2.409)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.125, 1.125)

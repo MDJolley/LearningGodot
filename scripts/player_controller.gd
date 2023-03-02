@@ -13,7 +13,7 @@ func _ready():
 	health_bar.update_max_health(maxHealth)
 	health_bar.update_health(currentHealth)
 	player_camera.make_current()
-	applyDamage(50)	
+	applyDamage(50)
 
 func initialize_stats():
 	canRegen = true
@@ -45,9 +45,8 @@ func _on_RegenDelay_timeout():
 	canRegen = true
 
 func shoot():
-	if Input.is_action_just_pressed("fire"):
-		var projectile = projectilePath.instantiate()
-		var position = $Wand.shoot()
+	if Input.is_action_pressed("fire"):
+		await $Wand.shoot()
 #		get_node("Projectile_Origin").global_position
 #		projectile.position = position
 #		get_tree().current_scene.add_child(projectile)
