@@ -1,18 +1,18 @@
 extends Node2D
 
+const projectilePath = preload("res://scenes/Projectile.tscn")
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(delta):
 	look_at(get_global_mouse_position())
 	pass
+
+func shoot():
+	var projectile = projectilePath.instantiate()
+	var new_pos = $Projectile_Origin.global_position
+	var new_rot = rotation
+	projectile.position = new_pos
+	projectile.rotation = new_rot
+	get_tree().current_scene.add_child(projectile)

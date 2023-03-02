@@ -1,7 +1,7 @@
-extends KinematicBody2D
+extends CharacterBody2D
 class_name Entity
 
-onready var health_bar = $HealthBar
+@onready var health_bar = $HealthBar
 
 var maxHealth : int
 var currentHealth : int
@@ -32,12 +32,12 @@ func applyDamage(amount):
 
 func modifyHP(amount):
 	currentHealth += amount
+	if(currentHealth > maxHealth) : currentHealth = maxHealth
 	health_bar.update_health(currentHealth)
 
 func regenHP(delta):
 	if(canRegen && currentHealth < maxHealth):
 		regenDelta += delta
-		print(regenDelta)
 		if(regenDelta >= regenTime):
 			modifyHP(60)
 			regenDelta -= regenTime
