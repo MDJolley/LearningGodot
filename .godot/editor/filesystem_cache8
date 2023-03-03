@@ -1,6 +1,6 @@
 2a60927148abd1d33b818b535e306557
-::res://::1677744110
-default_env.tres::Environment::4959373103587332205::1677720436::0::1::::<><>::
+::res://::1677800126
+default_env.tres::Environment::4959373103587332205::1677748278::0::1::::<><>::
 icon.png::CompressedTexture2D::1528291234855734902::1677569171::1677707744::1::::<><>::
 ::res://assets/::1677714129
 Basic_Projectile.png::CompressedTexture2D::2385662653361308716::1677714125::1677714129::1::::<><>::
@@ -9,17 +9,17 @@ HP_Progress.png::CompressedTexture2D::523290261659639365::1677569171::1677707744
 HP_Under.png::CompressedTexture2D::7783248941014998904::1677569171::1677707744::1::::<><>::
 Player.png::CompressedTexture2D::3778565337750656056::1677569171::1677707744::1::::<><>::
 Wand.png::CompressedTexture2D::8665029678315381400::1677569171::1677707744::1::::<><>::
-::res://scenes/::1677720436
-Player.tscn::PackedScene::3701456737131844691::1677719980::0::1::::<><>::uid://bt3moiovs38ie<>res://scripts/player_controller.gd<>uid://dqgp4m3v451bn<>res://scenes/ui/Health Bar.tscn
-Projectile.tscn::PackedScene::7317163052906360568::1677719980::0::1::::<><>::res://scripts/projectile.gd<>uid://88vrr0mlum01
-World.tscn::PackedScene::8049671213925942796::1677720436::0::1::::<><>::uid://v1ky60wt5ef3<>uid://bs0apmeqf1cx4
+::res://scenes/::1677748278
+Player.tscn::PackedScene::3701456737131844691::1677748278::0::1::::<><>::uid://bt3moiovs38ie<>res://scripts/player_controller.gd<>uid://dqgp4m3v451bn<>res://scenes/ui/Health Bar.tscn
+Projectile.tscn::PackedScene::7317163052906360568::1677748278::0::1::::<><>::res://scripts/projectile.gd<>uid://88vrr0mlum01
+World.tscn::PackedScene::8049671213925942796::1677748278::0::1::::<><>::uid://v1ky60wt5ef3<>uid://bs0apmeqf1cx4
 ::res://scenes/ui/::1677716171
 Health Bar.tscn::PackedScene::-1::1677716171::0::1::::<><>::uid://cd5w3ejacnwr0<>uid://di5i8cxk201ii<>uid://hpqrqmm8723r<>res://scripts/health_bar.gd
-::res://scenes/weapons/::1677719980
-Wand.tscn::PackedScene::8295633033255751159::1677719980::0::1::::<><>::uid://dvpn1jnedqs77<>res://scripts/wand.gd
-::res://scripts/::1677719476
+::res://scenes/weapons/::1677748278
+Wand.tscn::PackedScene::8295633033255751159::1677748278::0::1::::<><>::uid://dvpn1jnedqs77<>res://scripts/wand.gd
+::res://scripts/::1677748208
 entity.gd::GDScript::-1::1677717733::0::1::::Entity<>CharacterBody2D<>::
 health_bar.gd::GDScript::-1::1677717568::0::1::::<>Control<>::
-player_controller.gd::GDScript::-1::1677717950::0::1::::<>Entity<>::
-projectile.gd::GDScript::-1::1677717950::0::1::::<>RigidBody2D<>::
-wand.gd::GDScript::-1::1677719476::0::1::::<>Node2D<>::
+player_controller.gd::GDScript::-1::1677747117::0::1::::<>Entity<>::
+projectile.gd::GDScript::-1::1677746436::0::1::::<>RigidBody2D<>::
+wand.gd::GDScript::-1::1677748208::0::1::::<>Node2D<>::

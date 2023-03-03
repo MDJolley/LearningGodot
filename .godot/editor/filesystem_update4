@@ -1,8 +1,9 @@
 res://default_env.tres
+res://scripts/Test.gd
+res://scenes/Test.tscn
 res://scenes/weapons/Wand.tscn
 res://scripts/wand.gd
 res://scenes/World.tscn
 res://scenes/Player.tscn
 res://scenes/Projectile.tscn
 res://scripts/projectile.gd
-res://scripts/player_controller.gd

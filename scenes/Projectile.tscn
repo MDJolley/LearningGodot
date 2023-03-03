@@ -6,10 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_12qsu"]
 size = Vector2(7, 2)
 
-[node name="Projectile" type="RigidBody2D"]
-mass = 0.01
-max_contacts_reported = 1
-contact_monitor = true
+[node name="Projectile" type="Area2D"]
 script = ExtResource("1_k5h3t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
