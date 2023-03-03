@@ -9,6 +9,8 @@ var multishot : int #Number of projectiles
 var spread : float #Degrees / Rads between multishot projectiles
 var speed #Projectile speed
 var lifetime : float #Time in seconds before bullet queue_free()
+var damage : int #Base damage of each projectile
+var pierce : int #Number of enemies this projectile can penetrate
 
 func _ready():
 	pull_stats_from_player()
@@ -39,6 +41,8 @@ func set_projectile_stats(projectile):
 	projectile.position = $Projectile_Origin.global_position
 	projectile.rotation = rotation
 	projectile.speed = speed
+	projectile.damage = damage
+	projectile.pierce = pierce
 
 func pull_stats_from_player():
 	var player = get_parent()
@@ -46,3 +50,5 @@ func pull_stats_from_player():
 	speed = 400
 	spread = 0.0
 	multishot = 1
+	damage = 20
+	pierce = 2

@@ -67,6 +67,14 @@ fire={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Environment"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="Player Projectile"
+2d_physics/layer_5="Enemy Projectile"
+
 [physics]
 
 2d/default_gravity=0.0

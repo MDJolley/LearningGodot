@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdqxirvt6ny7c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1u0ur"]
+radius = 3.0
+height = 12.0
+
+[node name="Enemy Hurtbox" type="Area2D"]
+collision_layer = 4
+collision_mask = 9
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_1u0ur")
+debug_color = Color(0.980392, 0, 0.372549, 0.419608)

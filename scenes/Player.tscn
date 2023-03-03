@@ -3,29 +3,20 @@
 [ext_resource type="Texture2D" uid="uid://bt3moiovs38ie" path="res://assets/Player.png" id="1"]
 [ext_resource type="Script" path="res://scripts/player_controller.gd" id="2"]
 [ext_resource type="PackedScene" uid="uid://dqgp4m3v451bn" path="res://scenes/weapons/Wand.tscn" id="3"]
-[ext_resource type="PackedScene" path="res://scenes/ui/Health Bar.tscn" id="4"]
-
-[sub_resource type="CapsuleShape2D" id="1"]
-radius = 0.0
-height = 0.0
+[ext_resource type="PackedScene" uid="uid://iilwuprd217e" path="res://scenes/ui/Health Bar.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://qh668lr3d4vd" path="res://scenes/Collision Detection/Player Hurtbox.tscn" id="5_sc0qp"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("2")
 
 [node name="Camera3D" type="Camera2D" parent="."]
-zoom = Vector2(2.409, 2.409)
+zoom = Vector2(3, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.125, 1.125)
 texture = ExtResource("1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(-1, 3)
-shape = SubResource("1")
-
 [node name="Wand" parent="." instance=ExtResource("3")]
-position = Vector2(8, 3)
+position = Vector2(7, 3)
 
 [node name="HealthBar" parent="." instance=ExtResource("4")]
 layout_mode = 3
@@ -38,4 +29,11 @@ grow_vertical = 2
 
 [node name="RegenDelay" type="Timer" parent="."]
 
+[node name="Player Hurtbox" parent="." instance=ExtResource("5_sc0qp")]
+
+[node name="CollisionShape2D" parent="Player Hurtbox" index="0"]
+position = Vector2(-1, 2)
+
 [connection signal="timeout" from="RegenDelay" to="." method="_on_RegenDelay_timeout"]
+
+[editable path="Player Hurtbox"]
