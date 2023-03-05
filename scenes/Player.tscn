@@ -19,13 +19,9 @@ texture = ExtResource("1")
 position = Vector2(7, 3)
 
 [node name="HealthBar" parent="." instance=ExtResource("4")]
-layout_mode = 3
-anchors_preset = 15
 offset_left = -8.0
 offset_top = 11.0
 offset_bottom = 11.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="RegenDelay" type="Timer" parent="."]
 

@@ -21,8 +21,6 @@ offset_left = -8.0
 offset_top = 9.0
 offset_right = -8.0
 offset_bottom = 9.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [connection signal="area_entered" from="Enemy Hurtbox" to="." method="_on_enemy_hurtbox_area_entered"]
 

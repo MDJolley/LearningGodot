@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Rune" load_steps=3 format=3 uid="uid://3hypw232e1a"]
+
+[ext_resource type="Script" path="res://Items/_classes/rune_class.gd" id="1_yltjo"]
+[ext_resource type="Texture2D" uid="uid://b67i88awih2vo" path="res://assets/Rune_Multishot.png" id="2_b20cb"]
+
+[resource]
+script = ExtResource("1_yltjo")
+level = 0
+attackSpeed = 0.0
+attackSpeedMultiplier = 0.0
+multishot = 5
+spread = 50.0
+speed = 0.0
+lifetime = 0.0
+damage = 0.0
+pierce = 0
+name = "Multishot Rune"
+itemType = 1
+texture = ExtResource("2_b20cb")

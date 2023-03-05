@@ -22,3 +22,21 @@ position = Vector2(229, 39)
 
 [node name="Target_Dummy3" parent="." instance=ExtResource("3_xd7sp")]
 position = Vector2(213, 39)
+
+[node name="Target_Dummy4" parent="." instance=ExtResource("3_xd7sp")]
+position = Vector2(189, 21)
+
+[node name="Target_Dummy5" parent="." instance=ExtResource("3_xd7sp")]
+position = Vector2(221, 21)
+
+[node name="Target_Dummy6" parent="." instance=ExtResource("3_xd7sp")]
+position = Vector2(205, 21)
+
+[node name="Target_Dummy7" parent="." instance=ExtResource("3_xd7sp")]
+position = Vector2(189, 57)
+
+[node name="Target_Dummy8" parent="." instance=ExtResource("3_xd7sp")]
+position = Vector2(221, 57)
+
+[node name="Target_Dummy9" parent="." instance=ExtResource("3_xd7sp")]
+position = Vector2(205, 57)

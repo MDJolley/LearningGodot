@@ -16,7 +16,4 @@ texture = ExtResource("2_nyigw")
 position = Vector2(1, 0)
 rotation = 1.5708
 
-[connection signal="area_entered" from="Player Hitbox" to="." method="_on_player_hitbox_area_entered"]
-[connection signal="area_shape_entered" from="Player Hitbox" to="." method="_on_player_hitbox_area_shape_entered"]
-
 [editable path="Player Hitbox"]

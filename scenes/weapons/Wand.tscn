@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqgp4m3v451bn"]
+[gd_scene load_steps=5 format=3 uid="uid://dqgp4m3v451bn"]
 
 [ext_resource type="Texture2D" uid="uid://dvpn1jnedqs77" path="res://assets/Wand.png" id="1"]
 [ext_resource type="Script" path="res://scripts/wand.gd" id="1_hrsyb"]
+[ext_resource type="Resource" uid="uid://3hypw232e1a" path="res://Items/_repo/Rune_Multishot.tres" id="2_gtwaj"]
+[ext_resource type="Resource" uid="uid://cif3co16gh48u" path="res://Items/_repo/Rune_Pierce.tres" id="3_ku3xq"]
 
 [node name="Wand" type="Node2D"]
 script = ExtResource("1_hrsyb")
+equippedRunes = Array[Resource]([ExtResource("2_gtwaj"), ExtResource("3_ku3xq")])
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3, 0)

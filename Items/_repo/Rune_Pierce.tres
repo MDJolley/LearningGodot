@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Rune" load_steps=2 format=3 uid="uid://cif3co16gh48u"]
+
+[ext_resource type="Script" path="res://Items/_classes/rune_class.gd" id="1_n0875"]
+
+[resource]
+script = ExtResource("1_n0875")
+level = 0
+attackSpeed = 0.0
+attackSpeedMultiplier = 0.0
+multishot = 0
+spread = 0.0
+speed = 0.0
+lifetime = 0.0
+damage = 0.0
+pierce = 2
+name = "Pierce Rune"
+itemType = 0
