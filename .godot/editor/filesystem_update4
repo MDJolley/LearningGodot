@@ -1,14 +1,3 @@
 res://default_env.tres
-res://scenes/ui/Health Bar.tscn
-res://scripts/items/rune.gd
-res://scripts/items/item.gd
-res://scenes/weapons/Wand.tscn
-res://scripts/items/Rune_Multishot.tres
-res://scripts/wand.gd
-res://scenes/World.tscn
-res://Items/_classes/rune_class.gd
-res://scenes/Player.tscn
-res://scenes/Projectile.tscn
-res://scenes/Target_Dummy.tscn
 res://Items/_repo/Rune_Multishot.tres
-res://Items/_repo/Rune_Pierce.tres
+res://ui/wand_ui.tscn

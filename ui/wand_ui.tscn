@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://bctbv3cp1u0g3"]
+
+[ext_resource type="Texture2D" uid="uid://bmsuqjcwjljyg" path="res://assets/Wand_Invent_BG.png" id="1_xfjig"]
+[ext_resource type="Texture2D" uid="uid://kyh3xk06osxe" path="res://assets/Wand_Invent_Slot.png" id="2_8ja6g"]
+[ext_resource type="Texture2D" uid="uid://b67i88awih2vo" path="res://assets/Rune_Multishot.png" id="3_d1kr4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_if0pe"]
+
+[node name="Wand_UI" type="TextureRect"]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 362.0
+offset_top = -60.0
+offset_right = -362.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xfjig")
+
+[node name="Slot_Container" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -36.0
+offset_right = 86.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Slot_Background" type="TextureRect" parent="Slot_Container"]
+layout_mode = 2
+texture = ExtResource("2_8ja6g")
+
+[node name="Rune_Slot" type="Panel" parent="Slot_Container/Slot_Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_if0pe")
+
+[node name="Rune_Texture" type="TextureRect" parent="Slot_Container/Slot_Background/Rune_Slot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_d1kr4")
+stretch_mode = 3
