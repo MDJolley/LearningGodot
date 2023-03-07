@@ -1,3 +1,9 @@
 res://default_env.tres
-res://Items/_repo/Rune_Multishot.tres
 res://ui/wand_ui.tscn
+res://Items/_repo/Rune_Multishot.tres
+res://Managers/Item_Manager.gd
+res://Managers/Global.gd
+res://scenes/Player.tscn
+res://scripts/player_controller.gd
+res://scenes/weapons/Wand.tscn
+res://Items/_classes/rune_class.gd

@@ -17,7 +17,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ItemDatabase="*res://Managers/item_database.gd"
+ItemManager="*res://Managers/Item_Manager.gd"
+Global="*res://Managers/Global.gd"
 
 [importer_defaults]
 

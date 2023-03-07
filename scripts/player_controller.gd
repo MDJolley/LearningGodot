@@ -9,6 +9,7 @@ var level : int
 var moveSpeed : int
 
 func _ready():
+	Global.player = self
 	initialize_stats()
 	health_bar.update_max_health(maxHealth)
 	health_bar.update_health(currentHealth)
