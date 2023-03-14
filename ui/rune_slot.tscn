@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://tqhivvgjmdyq"]
+
+[ext_resource type="Texture2D" uid="uid://kyh3xk06osxe" path="res://assets/Wand_Invent_Slot.png" id="1_iqmj7"]
+[ext_resource type="Script" path="res://ui/rune_slot.gd" id="1_xmw8k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_if0pe"]
+
+[node name="Rune_Slot" type="Panel"]
+custom_minimum_size = Vector2(40, 72)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_if0pe")
+script = ExtResource("1_xmw8k")
+
+[node name="Slot_Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -36.0
+offset_right = 20.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_iqmj7")
+stretch_mode = 3
+
+[node name="Rune_Texture" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 3

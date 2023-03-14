@@ -1,55 +1,56 @@
 2a60927148abd1d33b818b535e306557
-::res://::1678153043
-default_env.tres::Environment::4959373103587332205::1678153242::0::1::::<><>::
-icon.png::CompressedTexture2D::1528291234855734902::1677569171::1677707744::1::::<><>::
-::res://assets/::1678004307
-Basic_Projectile.png::CompressedTexture2D::2385662653361308716::1677714125::1677714129::1::::<><>::
-HP_Over.png::CompressedTexture2D::5046725230992141819::1677569171::1677707744::1::::<><>::
-HP_Progress.png::CompressedTexture2D::523290261659639365::1677569171::1677707744::1::::<><>::
-HP_Under.png::CompressedTexture2D::7783248941014998904::1677569171::1677707744::1::::<><>::
-Player.png::CompressedTexture2D::3778565337750656056::1677569171::1677707744::1::::<><>::
-Rune_Multishot.png::CompressedTexture2D::4628881326024142908::1677967530::1677967544::1::::<><>::
-Rune_Pierce.png::CompressedTexture2D::686946836999033296::1677974726::1677974729::1::::<><>::
-Target_Dummy.png::CompressedTexture2D::2940212257660784300::1677835228::1677835229::1::::<><>::
-Wand.png::CompressedTexture2D::8665029678315381400::1677569171::1677707744::1::::<><>::
-Wand_Invent_BG.png::CompressedTexture2D::3267088996292183298::1678001061::1678001498::1::::<><>::
-Wand_Invent_Head.png::CompressedTexture2D::3684622124721313414::1678001385::1678001498::1::::<><>::
-Wand_Invent_Slot-export.png::CompressedTexture2D::8232896256310520887::1678004304::1678004307::1::::<><>::
-Wand_Invent_Slot.png::CompressedTexture2D::751909748319442138::1678004301::1678004307::1::::<><>::
-::res://Items/::1677969449
-::res://Items/_classes/::1677972208
-item_class.gd::GDScript::-1::1677968128::0::1::::ItemResource<>Resource<>::
-rune_class.gd::GDScript::-1::1677972208::0::1::::Rune<>ItemResource<>::
-::res://Items/_repo/::1678153239
-Rune_Multishot.tres::Resource/Rune::58271278217946364::1678152475::0::1::::<><>::res://Items/_classes/rune_class.gd<>uid://b67i88awih2vo
-Rune_Pierce.tres::Resource/Resource::5346378429554673634::1677974866::0::1::::<><>::res://Items/_classes/rune_class.gd
-::res://Items/_repo/_runes/::1678153239
-::res://Managers/::1678153021
-Global.gd::GDScript::-1::1678153021::0::1::::<>Node<>::
-Item_Manager.gd::GDScript::-1::1678153242::0::1::::<>Node<>::
-::res://scenes/::1678153043
-Player.tscn::PackedScene::3701456737131844691::1678153043::0::1::::<><>::uid://bt3moiovs38ie<>res://scripts/player_controller.gd<>uid://dqgp4m3v451bn<>uid://iilwuprd217e<>uid://qh668lr3d4vd
-Projectile.tscn::PackedScene::7317163052906360568::1677975307::0::1::::<><>::res://scripts/projectile.gd<>uid://88vrr0mlum01<>uid://cikbicd7aypkn
-Target_Dummy.tscn::PackedScene::3673205069000455741::1677975307::0::1::::<><>::res://scripts/Target_Dummy.gd<>uid://bh5i4pptvqfmq<>uid://bdqxirvt6ny7c<>uid://iilwuprd217e
-World.tscn::PackedScene::8049671213925942796::1677975306::0::1::::<><>::uid://v1ky60wt5ef3<>uid://bs0apmeqf1cx4<>uid://bsllfemafk1jd
-::res://scenes/Collision Detection/::1677837046
-Enemy Hitbox.tscn::PackedScene::6280805166212656259::1677836903::0::1::::<><>::
-Enemy Hurtbox.tscn::PackedScene::2631428962100106906::1677837046::0::1::::<><>::
-Player Hitbox.tscn::PackedScene::5355071008511072669::1677836905::0::1::::<><>::
-Player Hurtbox.tscn::PackedScene::1139411479947123833::1677836793::0::1::::<><>::
-::res://scenes/ui/::1677975307
-Health Bar.tscn::PackedScene::578734019939648788::1677975307::0::1::::<><>::uid://cd5w3ejacnwr0<>uid://di5i8cxk201ii<>uid://hpqrqmm8723r<>res://scripts/health_bar.gd
-::res://scenes/weapons/::1677975328
-Wand.tscn::PackedScene::8295633033255751159::1678153242::0::1::::<><>::uid://dvpn1jnedqs77<>res://scripts/wand.gd<>uid://3hypw232e1a<>uid://cif3co16gh48u
-::res://scripts/::1678153043
-entity.gd::GDScript::-1::1677717733::0::1::::Entity<>CharacterBody2D<>::
-health_bar.gd::GDScript::-1::1677839337::0::1::::<>Control<>::
-player_controller.gd::GDScript::-1::1678153043::0::1::::<>Entity<>::
-projectile.gd::GDScript::-1::1677841150::0::1::::<>Area2D<>::
-Target_Dummy.gd::GDScript::-1::1677840137::0::1::::<>Area2D<>::
-wand.gd::GDScript::-1::1677975299::0::1::::Wand<>Node2D<>::
-::res://ui/::1678152953
-wand_ui.tscn::PackedScene::2566121241421575020::1678152953::0::1::::<><>::uid://bmsuqjcwjljyg<>uid://kyh3xk06osxe<>uid://b67i88awih2vo
-::res://Weapons/::1677975055
-::res://Weapons/_classes/::1677975044
-::res://Weapons/_repo/::1677975055
+::res://::1678777326
+default_env.tres::Environment::4959373103587332205::1678669649::0::1::::<><>::
+icon.png::CompressedTexture2D::1528291234855734902::1677572771::1677711344::1::::<><>::
+::res://assets/::1678007907
+Basic_Projectile.png::CompressedTexture2D::2385662653361308716::1677717725::1677717729::1::::<><>::
+HP_Over.png::CompressedTexture2D::5046725230992141819::1677572771::1677711344::1::::<><>::
+HP_Progress.png::CompressedTexture2D::523290261659639365::1677572771::1677711344::1::::<><>::
+HP_Under.png::CompressedTexture2D::7783248941014998904::1677572771::1677711344::1::::<><>::
+Player.png::CompressedTexture2D::3778565337750656056::1677572771::1677711344::1::::<><>::
+Rune_Multishot.png::CompressedTexture2D::4628881326024142908::1677971130::1677971144::1::::<><>::
+Rune_Pierce.png::CompressedTexture2D::686946836999033296::1677978326::1677978329::1::::<><>::
+Target_Dummy.png::CompressedTexture2D::2940212257660784300::1677838828::1677838829::1::::<><>::
+Wand.png::CompressedTexture2D::8665029678315381400::1677572771::1677711344::1::::<><>::
+Wand_Invent_BG.png::CompressedTexture2D::3267088996292183298::1678004661::1678005098::1::::<><>::
+Wand_Invent_Head.png::CompressedTexture2D::3684622124721313414::1678004985::1678005098::1::::<><>::
+Wand_Invent_Slot-export.png::CompressedTexture2D::8232896256310520887::1678007904::1678007907::1::::<><>::
+Wand_Invent_Slot.png::CompressedTexture2D::751909748319442138::1678007901::1678007907::1::::<><>::
+::res://Items/::1677973049
+::res://Items/_classes/::1678158288
+item_class.gd::GDScript::-1::1677971728::0::1::::ItemResource<>Resource<>::
+rune_class.gd::GDScript::-1::1678158288::0::1::::Rune<>ItemResource<>::
+::res://Items/_repo/::1678156842
+::res://Items/_repo/_runes/::1678156842
+Rune_Multishot.tres::Resource/Resource::58271278217946364::1678156075::0::1::::<><>::res://Items/_classes/rune_class.gd<>uid://b67i88awih2vo
+Rune_Pierce.tres::Resource/Resource::5346378429554673634::1677978466::0::1::::<><>::res://Items/_classes/rune_class.gd
+::res://Managers/::1678198265
+Global.gd::GDScript::-1::1678196361::0::1::::<>Node<>::
+Item_Manager.gd::GDScript::-1::1678198265::0::1::::<>Node<>::
+::res://scenes/::1678669649
+Player.tscn::PackedScene::3701456737131844691::1678669649::0::1::::<><>::uid://bt3moiovs38ie<>res://scripts/player_controller.gd<>uid://bobe4whn88q1j<>uid://iilwuprd217e<>uid://qh668lr3d4vd
+Projectile.tscn::PackedScene::7317163052906360568::1678669649::0::1::::<><>::res://scripts/projectile.gd<>uid://88vrr0mlum01<>uid://cikbicd7aypkn
+Target_Dummy.tscn::PackedScene::3673205069000455741::1677978907::0::1::::<><>::res://scripts/Target_Dummy.gd<>uid://bh5i4pptvqfmq<>uid://bdqxirvt6ny7c<>uid://iilwuprd217e
+World.tscn::PackedScene::8049671213925942796::1678669649::0::1::::<><>::uid://v1ky60wt5ef3<>uid://bs0apmeqf1cx4<>uid://bsllfemafk1jd
+::res://scenes/Collision Detection/::1677840646
+Enemy Hitbox.tscn::PackedScene::6280805166212656259::1677840503::0::1::::<><>::
+Enemy Hurtbox.tscn::PackedScene::2631428962100106906::1677840646::0::1::::<><>::
+Player Hitbox.tscn::PackedScene::5355071008511072669::1677840505::0::1::::<><>::
+Player Hurtbox.tscn::PackedScene::1139411479947123833::1677840393::0::1::::<><>::
+::res://scenes/ui/::1677978907
+Health Bar.tscn::PackedScene::578734019939648788::1677978907::0::1::::<><>::uid://cd5w3ejacnwr0<>uid://di5i8cxk201ii<>uid://hpqrqmm8723r<>res://scripts/health_bar.gd
+::res://scenes/weapons/::1678669649
+Wand.tscn::PackedScene::3371424695337332149::1678669649::0::1::::<><>::uid://dvpn1jnedqs77<>res://scripts/wand.gd<>uid://3hypw232e1a<>uid://cif3co16gh48u
+::res://scripts/::1678197789
+entity.gd::GDScript::-1::1677721333::0::1::::Entity<>CharacterBody2D<>::
+health_bar.gd::GDScript::-1::1677842937::0::1::::<>Control<>::
+player_controller.gd::GDScript::-1::1678197789::0::1::::<>Entity<>::
+projectile.gd::GDScript::-1::1677844750::0::1::::<>Area2D<>::
+Target_Dummy.gd::GDScript::-1::1677843737::0::1::::<>Area2D<>::
+wand.gd::GDScript::-1::1677978899::0::1::::Wand<>Node2D<>::
+::res://ui/::1678198194
+wand_ui.gd::GDScript::-1::1678198176::0::1::::<>TextureRect<>::
+wand_ui.tscn::PackedScene::2566121241421575020::1678198194::0::1::::<><>::uid://bmsuqjcwjljyg<>uid://kyh3xk06osxe<>res://ui/wand_ui.gd<>uid://b67i88awih2vo
+::res://Weapons/::1677978655
+::res://Weapons/_classes/::1677978644
+::res://Weapons/_repo/::1677978655

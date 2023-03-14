@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Rune" load_steps=2 format=3 uid="uid://cif3co16gh48u"]
+[gd_resource type="Resource" script_class="Rune" load_steps=3 format=3 uid="uid://cif3co16gh48u"]
 
 [ext_resource type="Script" path="res://Items/_classes/rune_class.gd" id="1_n0875"]
+[ext_resource type="Texture2D" uid="uid://j106cvqe2g4g" path="res://assets/Rune_Pierce.png" id="2_gxvk7"]
 
 [resource]
 script = ExtResource("1_n0875")
@@ -15,3 +16,4 @@ damage = 0.0
 pierce = 2
 name = "Pierce Rune"
 itemType = 0
+texture = ExtResource("2_gxvk7")

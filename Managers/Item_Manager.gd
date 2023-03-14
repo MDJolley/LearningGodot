@@ -1,10 +1,11 @@
 extends Node
 
 var rune_directory = "res://Items/_repo/_runes/"
-var runes = Array[Rune]
+var runes = Array()
 
 func _ready():
 	_load_by_directory(rune_directory, runes)
+	print(runes)
 
 func _load_by_directory(directory_string : String, save_array : Array):
 	var directory = DirAccess.open(directory_string)

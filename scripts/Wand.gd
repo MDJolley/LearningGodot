@@ -4,7 +4,6 @@ class_name Wand
 var projectilePath = preload("res://scenes/Projectile.tscn")
 
 var canShoot : bool = true #Will be used to set attack speed
-var runeSlots : int #Number of slots available to equip runes
 @export var equippedRunes : Array[Resource] #Array of all Rune Resources in rune slots
 
 @export var attackSpeed : float #Attacks per second before % multipliers
@@ -15,6 +14,8 @@ var runeSlots : int #Number of slots available to equip runes
 @export var lifetime : float #Time in seconds before bullet queue_free()
 @export var damage : int #Base damage of each projectile
 @export var pierce : int #Number of enemies this projectile can penetrate
+@export var runeSlots : int #Number of slots available to equip runes (Not changable in game for now)
+
 @export var baseStats : Array #[attackSpeed, attackSpeedMultiplier, multishot, spread, speed, lifetime, damage, pierce]
 
 func _ready():
@@ -22,6 +23,13 @@ func _ready():
 	save_base_stats()
 	for rune in equippedRunes:
 		print(rune.name)
+	Global.equipped_wand = self
+	runeSlots = 4
+	for x in runeSlots:
+		if x%2 == 0:
+			equippedRunes.append(ItemManager.get_rune_by_name("Multishot Rune"))
+		else:
+			equippedRunes.append(ItemManager.get_rune_by_name("Pierce Rune"))
 	pull_stats_from_runes()
 
 func _process(delta):
@@ -99,3 +107,6 @@ func add_damage(value : int):
 
 func add_pierce(value : int):
 	pierce += value
+
+func get_runes() -> Array:
+	return equippedRunes

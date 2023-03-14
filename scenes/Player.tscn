@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bt3moiovs38ie" path="res://assets/Player.png" id="1"]
 [ext_resource type="Script" path="res://scripts/player_controller.gd" id="2"]
-[ext_resource type="PackedScene" path="res://scenes/weapons/Wand.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://bobe4whn88q1j" path="res://scenes/weapons/Wand.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://iilwuprd217e" path="res://scenes/ui/Health Bar.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://qh668lr3d4vd" path="res://scenes/Collision Detection/Player Hurtbox.tscn" id="5_sc0qp"]
 

@@ -51,5 +51,9 @@ func shoot():
 #		get_node("Projectile_Origin").global_position
 #		projectile.position = position
 #		get_tree().current_scene.add_child(projectile)
-		
-	
+
+func _input(event):
+	if event.is_action_pressed("inventory"): 
+		var invent_path = preload("res://ui/wand_ui.tscn")
+		var inventory = invent_path.instantiate()
+		player_camera.add_child(inventory)
